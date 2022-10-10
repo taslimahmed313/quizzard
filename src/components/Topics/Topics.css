@@ -1,6 +1,12 @@
 .topics-details img {
   width: 100%;
-  height: 200px;
+  height: 150px;
   object-fit: cover;
   background: rgba(black, 0.5);
+}
+.topic-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin: 0px 100px;
 }

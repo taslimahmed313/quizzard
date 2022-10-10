@@ -1,0 +1,24 @@
+.topic {
+  border: 2px solid lightgray;
+  border-radius: 8px;
+  padding: 5px 10px;
+  background-color: rgb(216, 249, 249);
+}
+.topic img {
+  height: 200px;
+  width: 100%;
+}
+.topic-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.btn-quiz {
+  background-color: rgb(70, 211, 197);
+  border: none;
+  border-radius: 7px;
+  padding: 10px 20px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
