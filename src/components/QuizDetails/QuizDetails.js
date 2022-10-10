@@ -2,17 +2,13 @@ import React from 'react';
 import Option from '../Option/Option';
 
 const QuizDetails = ({que}) => {
-    const { question, options, correctAnswer } = que;
-
-    const handleCorrectAns = () =>{
-        console.log(correctAnswer)
-    }
+    const { question, options } = que;
 
     return (
       <div>
         <p>{question}</p>
         {options.map((option) => (
-          <Option handleCorrectAns={handleCorrectAns} option={option}></Option>
+          <Option  que={que} option={option}></Option>
         ))}
       </div>
     );
