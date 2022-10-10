@@ -8,9 +8,8 @@ const Quiz = () => {
     const {data} = quiz;
     return (
       <div>
-        <div>Quiz of {data.name}</div>
+        <h2>Quiz of {data.name}</h2>
         <div>
-            {data.questions.map((que) => console.log(que))}
             {data.questions.map((que) => <QuizDetails key={que.id} que={que}></QuizDetails>)}
         </div>
       </div>

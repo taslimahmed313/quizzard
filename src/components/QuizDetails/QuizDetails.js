@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from 'react';
 import swal from "sweetalert";
 import Option from '../Option/Option';
+import './QuizDetails.css';
 
 
 const QuizDetails = ({que}) => {
@@ -13,11 +14,16 @@ const QuizDetails = ({que}) => {
     }
 
     return (
-      <div>
-        <p>{question}</p> <FontAwesomeIcon onClick={handleCorrectAns} icon={faEye} />
-        {options.map((option) => (
-          <Option que={que} option={option}></Option>
-        ))}
+      <div className="quiz-details">
+        <div className="qna">
+          <p>{question}</p>{" "}
+          <FontAwesomeIcon onClick={handleCorrectAns} icon={faEye} />
+        </div>
+        <div className="options">
+          {options.map((option) => (
+            <Option que={que} option={option}></Option>
+          ))}
+        </div>
       </div>
     );
 };

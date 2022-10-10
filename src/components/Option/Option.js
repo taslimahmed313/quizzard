@@ -1,4 +1,5 @@
 import React from 'react';
+import './Option.css';
 
 const Option = ({ option,  que }) => {
     const {correctAnswer} = que;
@@ -11,8 +12,8 @@ const Option = ({ option,  que }) => {
         }
     }
   return (
-    <div>
-      <form action="">
+    <div className='option'>
+      <form className='option-input'>
         <input onClick={handle} type="radio" name='tik'/>
         {option}
       </form>

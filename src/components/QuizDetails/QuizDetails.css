@@ -1,0 +1,16 @@
+.quiz-details {
+  border: 2px solid lightpink;
+  text-align: start;
+  margin: 20px 10px;
+  padding: 10px;
+  border-radius: 8px;
+}
+.qna {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.options {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
