@@ -8,7 +8,7 @@ const Quiz = () => {
     const {data} = quiz;
     return (
       <div>
-        <div>{data.name} Quiz</div>
+        <div>Quiz of {data.name}</div>
         <div>
             {data.questions.map((que) => console.log(que))}
             {data.questions.map((que) => <QuizDetails key={que.id} que={que}></QuizDetails>)}

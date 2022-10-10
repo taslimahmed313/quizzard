@@ -13,7 +13,7 @@ const Option = ({ option,  que }) => {
   return (
     <div>
       <form action="">
-        <input onClick={handle} type="radio" id='3' value='a' name='ti' />
+        <input onClick={handle} type="radio" name='tik'/>
         {option}
       </form>
     </div>
