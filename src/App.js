@@ -15,30 +15,35 @@ function App() {
       children: [
         {
           path: "/",
-          loader: async()=> fetch('https://openapi.programming-hero.com/api/quiz'),
+          loader: async () =>
+            fetch("https://openapi.programming-hero.com/api/quiz"),
           element: <Topics></Topics>,
         },
         {
           path: "/statistics",
-          element: <Statistics></Statistics>
+          loader: async () =>
+            fetch("https://openapi.programming-hero.com/api/quiz"),
+          element: <Statistics></Statistics>,
         },
         {
-          path: '/blog',
-          element: <Blog></Blog>
-        }
+          path: "/blog",
+          element: <Blog></Blog>,
+        },
       ],
     },
     {
-      path: '/topic/:topicId',
-      loader: async({params})=>{
-        return fetch(`https://openapi.programming-hero.com/api/quiz/${params.topicId}`);
+      path: "/topic/:topicId",
+      loader: async ({ params }) => {
+        return fetch(
+          `https://openapi.programming-hero.com/api/quiz/${params.topicId}`
+        );
       },
-      element: <Quiz></Quiz>
+      element: <Quiz></Quiz>,
     },
     {
-      path: '*',
-      element: <ErrorPage></ErrorPage>
-    }
+      path: "*",
+      element: <ErrorPage></ErrorPage>,
+    },
   ]);
   return (
     <div className="App">
