@@ -1,5 +1,11 @@
+.header {
+  background-color: rgb(33, 43, 42);
+  color: white;
+  border-radius: 4px;
+  padding: 0px 10px;
+}
 .brand-name {
-  font-size: 20px;
+  font-size: 16px;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 .nav-bar {
@@ -9,6 +15,19 @@
 }
 .link a {
   text-decoration: none;
-  margin-right: 25px;
+  margin-right: 20px;
   font-weight: 600;
+  color: white;
+}
+@media screen and (max-width: 576px) {
+  .header {
+    width: 100%;
+  }
+  .link a {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .brand-name {
+    font-size: 13px;
+  }
 }

@@ -16,7 +16,7 @@ const QuizDetails = ({que}) => {
     return (
       <div className="quiz-details">
         <div className="qna">
-          <p>{question}</p>
+          <p>Question : {question.slice(3, -4)}</p>
           <FontAwesomeIcon className="eye-icon" onClick={handleCorrectAns} icon={faEye} />
         </div>
         <div className="options">

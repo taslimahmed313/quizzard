@@ -4,9 +4,8 @@ import './Option.css';
   
 const Option = ({ option,  que }) => {
     const {correctAnswer, id} = que;
-    console.log(que)
     
-    const handleQuizAns = () =>{
+    const handleQuizAns = (option) =>{
         if(option === correctAnswer){
             swal('Wow! Good Job');
         }
@@ -16,18 +15,10 @@ const Option = ({ option,  que }) => {
     }
   return (
     <div className="option">
-      {/* <form className="option-input">
-        <input type="radio" id={id} />
-        <label onClick={handleQuizAns} htmlFor={id}>
+      <label className="option-input " htmlFor="">
+          <input onClick={() => handleQuizAns(option)} type="radio" name={id} />
           {option}
-        </label>
-      </form> */}
-      <div
-        className={({ active }) => (active ? 'correct' : undefined)}
-        onClick={handleQuizAns}
-      >
-        {option}
-      </div>
+      </label>
     </div>
   );
 };

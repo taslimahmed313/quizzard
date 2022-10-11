@@ -10,7 +10,8 @@ const Header = () => {
             <h3>Quizzard</h3>
           </div>
           <nav className="link">
-            <Link to="/">Topics</Link>
+            <Link to='/'>Home</Link>
+            <Link to="/topics">Topics</Link>
             <Link to="/statistics">Rechart</Link>
             <Link to="/blog">Blog</Link>
           </nav>

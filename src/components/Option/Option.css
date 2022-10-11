@@ -3,7 +3,6 @@
   padding: 10px;
   margin: 7px;
   border-radius: 8px;
-  cursor: pointer;
 }
 .option-input {
   display: flex;
@@ -11,10 +10,5 @@
 }
 input {
   margin-right: 10px;
-}
-.correct {
-  background-color: green;
-}
-.wrong {
-  background-color: red;
+  cursor: pointer;
 }

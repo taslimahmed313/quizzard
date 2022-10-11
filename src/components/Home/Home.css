@@ -1,0 +1,36 @@
+.intro {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  align-items: center;
+  margin: 30px;
+}
+.text {
+  font-size: 15px;
+  margin-right: 40px;
+  text-align: justify;
+  font-family: cursive;
+}
+.text span {
+  font-size: 35px;
+  font-family: fantasy;
+  margin: 10px;
+  display: block;
+}
+.intro img {
+  height: 350px;
+}
+@media screen and (max-width: 676px) {
+  .intro {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .text {
+    font-size: 20px;
+    padding: 15px;
+  }
+  .text span {
+    font-size: 30px;
+  }
+  .intro img {
+    width: 90%;
+  }
+}
