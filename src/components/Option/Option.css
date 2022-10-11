@@ -12,6 +12,9 @@
 input {
   margin-right: 10px;
 }
-.active {
-  color: tomato;
+.correct {
+  background-color: green;
+}
+.wrong {
+  background-color: red;
 }

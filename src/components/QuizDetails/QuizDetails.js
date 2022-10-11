@@ -17,7 +17,7 @@ const QuizDetails = ({que}) => {
       <div className="quiz-details">
         <div className="qna">
           <p>{question}</p>
-          <FontAwesomeIcon onClick={handleCorrectAns} icon={faEye} />
+          <FontAwesomeIcon className="eye-icon" onClick={handleCorrectAns} icon={faEye} />
         </div>
         <div className="options">
           {options.map((option) => (

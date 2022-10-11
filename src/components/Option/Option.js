@@ -1,14 +1,14 @@
 import React from 'react';
 import swal from "sweetalert";
 import './Option.css';
-
   
 const Option = ({ option,  que }) => {
-    const {correctAnswer} = que;
+    const {correctAnswer, id} = que;
+    console.log(que)
     
     const handleQuizAns = () =>{
         if(option === correctAnswer){
-            swal('WOW! Good Job');
+            swal('Wow! Good Job');
         }
         else{
             swal('Oops!! Wrong Answer')
@@ -17,14 +17,13 @@ const Option = ({ option,  que }) => {
   return (
     <div className="option">
       {/* <form className="option-input">
-        <label onClick={handleQuizAns} htmlFor="check">
-          <input type="radio" id="check" />
+        <input type="radio" id={id} />
+        <label onClick={handleQuizAns} htmlFor={id}>
           {option}
         </label>
       </form> */}
-      {/* <button onClick={notify}>Notify!</button> */}
       <div
-        className={({ isActive }) => (isActive ? "active" : undefined)}
+        className={({ active }) => (active ? 'correct' : undefined)}
         onClick={handleQuizAns}
       >
         {option}

@@ -1,3 +1,7 @@
+.brand-name {
+  font-size: 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
 .nav-bar {
   display: flex;
   align-items: center;
@@ -6,4 +10,5 @@
 .link a {
   text-decoration: none;
   margin-right: 25px;
+  font-weight: 600;
 }

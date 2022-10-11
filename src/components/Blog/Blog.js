@@ -5,7 +5,7 @@ const Blog = () => {
     return (
       <div className="blog">
         <div className="question">
-          <p>Question-1: What is purpose of react router?</p>
+          <p>Question-1 : What is purpose of react router?</p>
           <p>
             React Router is a standard library for routing in React. It enables
             the navigation among views of various components in a React
@@ -14,7 +14,7 @@ const Blog = () => {
           </p>
         </div>
         <div className="question">
-          <p>Question-1: How does Context API works ?</p>
+          <p>Question-2 : How does Context API works ?</p>
           <p>
             The React Context API is a way for a React app to effectively
             produce global variables that can be passed around. This is the
@@ -24,7 +24,7 @@ const Blog = () => {
           </p>
         </div>
         <div className="question">
-          <p>Question-1: What is useHref() in react router?</p>
+          <p>Question-3 : What is useHref() in react router?</p>
           <p>
             The useHref hook returns a URL that may be used to link to the given
             to location, even outside of React Router. Tip: You may be
