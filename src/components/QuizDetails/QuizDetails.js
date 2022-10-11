@@ -10,13 +10,13 @@ const QuizDetails = ({que}) => {
     const { question, options, correctAnswer } = que;
 
     const handleCorrectAns = ()=>{
-        swal(correctAnswer);
+        swal('Correct Answer', correctAnswer);
     }
 
     return (
       <div className="quiz-details">
         <div className="qna">
-          <p>{question}</p>{" "}
+          <p>{question}</p>
           <FontAwesomeIcon onClick={handleCorrectAns} icon={faEye} />
         </div>
         <div className="options">

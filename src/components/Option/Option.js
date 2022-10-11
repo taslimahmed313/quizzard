@@ -1,22 +1,34 @@
 import React from 'react';
+import swal from "sweetalert";
 import './Option.css';
 
+  
 const Option = ({ option,  que }) => {
     const {correctAnswer} = que;
-    const handle = () =>{
+    
+    const handleQuizAns = () =>{
         if(option === correctAnswer){
-            alert('Correct Answer')
+            swal('WOW! Good Job');
         }
         else{
-            alert('Wrong Answer.')
+            swal('Oops!! Wrong Answer')
         }
     }
   return (
-    <div className='option'>
-      <form className='option-input'>
-        <input onClick={handle} type="radio" name='tik'/>
+    <div className="option">
+      {/* <form className="option-input">
+        <label onClick={handleQuizAns} htmlFor="check">
+          <input type="radio" id="check" />
+          {option}
+        </label>
+      </form> */}
+      {/* <button onClick={notify}>Notify!</button> */}
+      <div
+        className={({ isActive }) => (isActive ? "active" : undefined)}
+        onClick={handleQuizAns}
+      >
         {option}
-      </form>
+      </div>
     </div>
   );
 };
