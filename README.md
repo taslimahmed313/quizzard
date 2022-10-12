@@ -1,9 +1,9 @@
 # Project Name: Quizzard
 
-# Live-Site-Link:
+# Live-Site-Link: https://calm-croissant-cf2ced.netlify.app
 
 # Added Features:
 
-- Swit Alwet
-- FontAwsome
-- Recharts
+- React Router
+- FontAwesome
+- Sweet Alert

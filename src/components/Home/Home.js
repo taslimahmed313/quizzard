@@ -1,4 +1,5 @@
 import React from 'react';
+import Topics from '../Topics/Topics';
 import './Home.css';
 
 const Home = () => {
@@ -19,6 +20,9 @@ const Home = () => {
               alt=""
             />
           </div>
+        </div>
+        <div>
+          <Topics></Topics>
         </div>
       </div>
     );

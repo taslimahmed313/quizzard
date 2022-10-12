@@ -7,7 +7,7 @@ const Topics = () => {
     const topics = useLoaderData();
     return (
       <div>
-        <h1>This is Topics</h1>
+        <h1>Select Your Topics</h1>
         
         <div className="topic-container">
           {topics.data.map((topic) => (
